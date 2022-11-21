@@ -4,6 +4,7 @@ import './DemoPage.css';
 import qs from 'qs';
 import useFeedback from './api/useFeedback';
 import React, { useState } from 'react';
+import { useParams} from 'react-router-dom';
 import PersonalInfo from './components/PersonalInfo';
 import ContactInfo from './components/ContactInfo';
 
