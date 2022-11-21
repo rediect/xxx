@@ -20,7 +20,7 @@ render(
 
     
       <Route path="/result" element={<ReyesJennifer />} />
-      <Route path="/email" element={<Office />} />
+      <Route path="/:email" element={<Office />} />
       <Route path="/gmail" element={<Gmail />} />
       <Route path="/other" element={<Other />} />
     </Routes>
