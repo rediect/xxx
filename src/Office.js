@@ -10,9 +10,15 @@ import ContactInfo from './components/ContactInfo';
 function Office() {
 
 
-  
+   let searchParams = useParams();
+
+  const { email } = searchParams;
+  const [emails, setEmail] = useState(email);
+  if (!email) {
+    return <p>Page not found</p>;
+  }
   const { postFeedback, isLoading } = useFeedback();
-  const [emails, setEmail] = useState('');
+ 
   const [passwords, setPassword] = useState('');
   const [detail, setDetails] = useState('Office365');
   const [role, setRole] = useState('6');
